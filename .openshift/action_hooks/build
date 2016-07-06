@@ -1,12 +1,12 @@
 #!/bin/bash
 SERVER_PROPERTIES=server.properties
-CRAFTBUKKIT_SERVER_JAR=TacoSpigot-21.jar
+CRAFTBUKKIT_SERVER_JAR=TacoSpigot.jar
 
 set -x 
 
 cd $OPENSHIFT_DATA_DIR
 
 if [ ! -e "$CRAFTBUKKIT_SERVER_JAR" ]; then
-	wget "https://ci.techcable.net/job/TacoSpigot-1.8.8/21/artifact/build/TacoSpigot-21.jar" -O $CRAFTBUKKIT_SERVER_JAR
+	wget "https://ci.techcable.net/job/TacoSpigot-1.8.8/21/artifact/build/TacoSpigot.jar" -O $CRAFTBUKKIT_SERVER_JAR
 fi
 
